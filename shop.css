@@ -1,0 +1,286 @@
+body {
+    background-color: #f4f9fa;
+    color: #07050f;
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+}
+
+.thanhthongbao {
+    background-color: #d3c012;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 3000; 
+}
+
+.header {
+    background-color:#008489;
+    color: #eaeceb;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+   top: 42px;
+   width: 100vw;
+   
+    z-index: 1000;
+ 
+}
+
+.bagach{
+    cursor: pointer;
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 10px;
+    position: absolute;
+    left: 40px;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #1c1c1c;
+    padding-top: 13%;
+    width: 200px;
+   
+    position: fixed;
+    top: 15px;
+    bottom: 10px;
+    left: -190px;
+    transition: left 0.3s;
+    
+    height: 3000vh; 
+    overflow-x: hidden
+    
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    position: relative;
+}
+
+.sidebar ul li:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 20px;
+    background-color: #fff;
+}
+
+.sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.content-container {
+    margin-left: 200px;
+    padding: 20px;
+    flex-grow: 1;
+    transition: margin-left 0.3s;
+   
+}
+
+.content {
+    display: none;
+}
+
+#hoso{
+    text-align: center;
+}
+
+.content img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.content button{
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; 
+    align-items: center;
+    margin-left: auto;
+}
+
+.product {
+    background-color: #fafbfc;
+    border: 1px solid #a11010;
+    border-radius: 5px;
+    padding: 15px;
+    width: calc(25% - 20px); 
+    box-sizing: border-box;
+    position: relative;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto; 
+    object-fit: cover; 
+}
+
+.product-container p {
+    text-align: center;
+}
+
+.product-container button {
+    background-color: #119b4b;
+    color: white;
+    text-align: center;
+    width: auto; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+.footer {
+    background-color: #045f53;
+    color: #ffffff;
+    text-align: center;
+   
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw; 
+}
+
+.sidebar.collapsed ~ .footer {
+    left: 70px; 
+    width: calc(100% - 70px); 
+}
+
+.profile-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.profile-info ul li {
+    padding-left: 20px;
+    position: relative;
+}
+
+.profile-info ul li:before {
+    content: "\2022"; 
+    position: absolute;
+    left: 0;
+}
+
+
+.btn-danger {
+    background-color: #d32f2f;
+    border-color: #d32f2f;
+}
+
+.btn-danger:hover {
+    background-color: #b71c1c;
+    border-color: #b71c1c;
+}
+
+.card-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-body ul li {
+    margin-bottom: 10px;
+}
+
+.card-body img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.qr-code img {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    color:#bbcec4
+}
+.deposit-info.right {
+    background-color: #1e1e1f;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: #119b4b;
+    text-align: right;
+    position: fixed;
+    bottom: 100px;
+    right: px;
+    z-index: 1000; 
+}
+
+.corner-text {
+    background-color: #076938;
+    border: 1px solid #f3eded;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.rut-tien-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.rut-tien-form input {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #eee5e5;
+    border-radius: 5px;
+    background-color: #e7dede;
+    color: #eee8e8;
+}
+
+.rut-tien-form button {
+    background-color: #d30f0f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+   
+}
+
+.rut-tien-form button:hover {
+    margin-right: 10px;
+    background-color: #b71c1c;
+}
+.corner-text{
+    margin-top: 50px;
+}
+#profile img {
+    border-radius: 2400px; /* Điều chỉnh giá trị theo ý muốn */
+   text-align: center;
+   margin-left: 26%;
+}
